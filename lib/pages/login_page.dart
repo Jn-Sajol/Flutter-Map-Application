@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,9 @@ class HomePage extends StatelessWidget {
               height: 30,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+              Navigator.of(context).pushNamed('/home');
+              },
               style: const ButtonStyle(
                 backgroundColor: MaterialStatePropertyAll(Colors.amberAccent),
                 foregroundColor: MaterialStatePropertyAll(Colors.white70),

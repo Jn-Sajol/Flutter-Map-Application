@@ -1,4 +1,5 @@
-import 'package:birthday_app/pages/homepage.dart';
+import 'package:birthday_app/pages/home_page.dart';
+import 'package:birthday_app/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,11 @@ class MyApp extends StatelessWidget {
       // brightness: 
       brightness: Brightness.dark,
       ),
-      home: const HomePage(),
+
+      home: const LoginPage(),
+      routes:{
+      '/home':(context) => const HomePage(),
+      }
     );
   }
 }
