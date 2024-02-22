@@ -10,6 +10,8 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Column(
                 children: [
+                const Text('Hello!, Welcome Back'),
+                const Text('Login To Continue'),
                 TextField(
                 decoration: const InputDecoration(
                 hintText:'add number',
