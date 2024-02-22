@@ -50,27 +50,94 @@ class HomePage extends StatelessWidget {
               child: TextButton(
                   onPressed: () {}, child: const Text('Forgot Password?')),
             ),
-           const  SizedBox(height: 30,),
-            SizedBox(
-              // width: 45,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: const ButtonStyle(
-                    backgroundColor:
-                        MaterialStatePropertyAll(Colors.amberAccent),
-                    foregroundColor:
-                        MaterialStatePropertyAll(Colors.white70),
-                        minimumSize: MaterialStatePropertyAll(Size(267, 48)),
-                        shape: MaterialStatePropertyAll(
-                        RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(7))
-                        )
-                        ),
-                        ),
-                        
-                child: const Text("Log In", style: TextStyle(color: Colors.black),),
+            const SizedBox(
+              height: 30,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: const ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll(Colors.amberAccent),
+                foregroundColor: MaterialStatePropertyAll(Colors.white70),
+                minimumSize: MaterialStatePropertyAll(Size(267, 48)),
+                shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(7)))),
+              ),
+              child: const Text(
+                "Log In",
+                style: TextStyle(color: Colors.black),
               ),
             ),
+            const SizedBox(
+              height: 64,
+            ),
+            const Text('Login With'),
+            const SizedBox(
+              height: 24,
+            ),
+            SizedBox(
+              width: 267,
+              height: 40, // Set the desired width
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.white70),
+                  foregroundColor: MaterialStateProperty.all(Colors.white70),
+                  shape: MaterialStateProperty.all(const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  )),
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.add),
+                    SizedBox(width: 8),
+                    Text(
+                      "Log In with Google",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 24,
+            ),
+            SizedBox(
+              width: 267,
+              height: 40, // Set the desired width
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.white70),
+                  foregroundColor: MaterialStateProperty.all(Colors.white70),
+                  shape: MaterialStateProperty.all(const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  )),
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.add),
+                    SizedBox(width: 8),
+                    Text(
+                      "Log In with Google",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 22,),
+            Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text('DOnt Have Account?'),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Sign in',style: TextStyle(color: Colors.amber,decoration: TextDecoration.underline),),
+                )
+              ],
+            )
           ],
         ),
       ),
