@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
               child: TextButton(
                   onPressed: () {}, child: const Text('Forgot Password?')),
             ),
-            SizedBox(height: 30,),
+           const  SizedBox(height: 30,),
             SizedBox(
               // width: 45,
               child: ElevatedButton(
@@ -60,7 +60,12 @@ class HomePage extends StatelessWidget {
                         MaterialStatePropertyAll(Colors.amberAccent),
                     foregroundColor:
                         MaterialStatePropertyAll(Colors.white70),
-                        minimumSize: MaterialStatePropertyAll(Size(267, 48))
+                        minimumSize: MaterialStatePropertyAll(Size(267, 48)),
+                        shape: MaterialStatePropertyAll(
+                        RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(7))
+                        )
+                        ),
                         ),
                         
                 child: const Text("Log In", style: TextStyle(color: Colors.black),),
